@@ -1,0 +1,26 @@
+<div class="topnav">
+    <a href="/addassignment">Add Assignment</a>
+    <a href="/addmaterial">Add Material</a>
+    <a href="/viewassignment">View Assignment</a>
+    <a href="/viewmaterial">View Material</a>
+</div>
+
+
+<table id="customers">
+    <tr>
+        <th>Subject</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Link</th>
+    </tr>
+
+    <tr *ngFor="let material of materials;">
+        <td>{{material.subject}}</td>
+        <td>{{material.title}}</td>
+        <td>{{material.detail}}</td>
+        <td><a href="{{material.link}}" target="_blank">{{material.link}} </a></td>
+    </tr>
+
+
+
+</table>

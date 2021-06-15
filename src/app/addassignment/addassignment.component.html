@@ -1,0 +1,23 @@
+<div class="topnav">
+    <a href="/addassignment">Add Assignment</a>
+    <a href="/addmaterial">Add Material</a>
+    <a href="/viewassignment">View Assignment</a>
+    <a href="/viewmaterial">View Material</a>
+</div>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active"> Add Assignment </h2>
+
+        <!-- Login Form -->
+        <form>
+            <input type="text" id="assignNo" class="fadeIn second" name="assignNo" placeholder="Assignment Number" [(ngModel)]="assignNo">
+            <input type="text" id="assignQues" class="fadeIn third" name="assignQues" placeholder="Assignment Question" [(ngModel)]="assignQues" >
+            <input type="text" id="assignMarks" class="fadeIn third" name="assignMarks" placeholder="Total Marks" [(ngModel)]="assignMarks">
+            <input type="text" id="description" class="fadeIn third" name="description" placeholder="Description" [(ngModel)]="description" >
+            <br>
+            <button class="fadeIn fourth" (click)='addAssignment()'>Add</button>
+        </form>
+
+    </div>
+</div>

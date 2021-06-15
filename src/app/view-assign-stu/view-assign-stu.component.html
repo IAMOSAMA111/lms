@@ -1,0 +1,25 @@
+
+<div class="topnav">
+    <a routerLink="/viewassignmentstudent">View Assignment</a>
+    <a routerLink="/viewmaterialstudent">Material Uploaded</a>
+</div>
+<br>
+<br>
+<table id="customers">
+    <tr>
+        <th>Assignment No</th>
+        <th>Question</th>
+        <th>Description</th>
+        <th>Marks</th>
+    </tr>
+
+    <tr *ngFor="let assignment of assignments;">
+        <td>{{assignment.number}}</td>
+        <td>{{assignment.question}}</td>
+        <td>{{assignment.detail}}</td>
+        <td>{{assignment.marks}}</td>
+    </tr>
+
+
+
+</table>
